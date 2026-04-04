@@ -1,0 +1,19 @@
+# Build artifacts
+build/
+
+# CubeMX temporary files
+mx.scratch
+
+# STM32 VSCode extension - local machine config
+.settings/
+
+# Compiled objects and binaries
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# CMake cache
+CMakeCache.txt
+CMakeFiles/

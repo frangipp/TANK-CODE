@@ -1,0 +1,115 @@
+LICENCE D’USAGE PERSONNEL RESTREINT
+Version 1.0
+© [2026] [VINCENT DE LA BROISE]
+
+1. Définitions
+
+Dans la présente licence, les termes ci-dessous ont la signification suivante :
+
+1.1. “Logiciel” désigne l’ensemble des fichiers, codes sources, binaires, documentations, contenus, textes, images, schémas, notices, exemples, scripts, métadonnées, et tout autre élément publié par le Titulaire des droits dans le dépôt ou associé au Projet.
+
+1.2. “Titulaire des droits” désigne la personne physique ou morale indiquée comme auteur ou titulaire du Projet.
+
+1.3. “Utilisateur” désigne toute personne physique ou morale accédant au Logiciel, le consultant, le téléchargeant, le copiant, le compilant, l’exécutant ou l’utilisant de quelque manière que ce soit.
+
+1.4. “Usage personnel” désigne un usage strictement privé, non commercial, non professionnel, réalisé par une personne physique pour ses besoins propres, sans finalité lucrative, sans prestation de service, sans mise à disposition à des tiers, et sans exploitation au bénéfice d’une entreprise, d’une administration, d’une association, d’un client, d’un employeur ou de tout autre tiers.
+
+1.5. “Système d’IA” désigne tout système, modèle, outil ou procédé d’intelligence artificielle, d’apprentissage automatique, de traitement automatisé du langage, de génération de contenu, d’indexation automatisée, de fouille de textes et de données, d’extraction de caractéristiques, d’embedding, de fine-tuning, d’évaluation automatique, de RAG, de classification, de corpus, de scraping ou d’ingestion automatisée de données.
+
+2. Objet
+
+Le Titulaire des droits concède à l’Utilisateur une licence personnelle, limitée, non exclusive, non transférable et révocable d’utiliser le Logiciel uniquement dans les conditions expressément prévues par la présente licence.
+
+Tous les droits qui ne sont pas expressément concédés demeurent réservés au Titulaire des droits.
+
+3. Autorisations accordées
+
+Sous réserve du respect intégral de la présente licence, l’Utilisateur est autorisé à :
+
+3.1. consulter le Logiciel ;
+
+3.2. télécharger et conserver une copie locale du Logiciel ;
+
+3.3. exécuter le Logiciel à des fins d’Usage personnel ;
+
+3.4. compiler, installer ou adapter le Logiciel uniquement pour un Usage personnel ;
+
+3.5. réaliser une copie de sauvegarde strictement personnelle.
+
+4. Interdictions
+
+Sauf autorisation écrite préalable et expresse du Titulaire des droits, il est interdit à l’Utilisateur de :
+
+4.1. utiliser le Logiciel à des fins commerciales, professionnelles, industrielles, institutionnelles, de conseil, de prestation de service, de production, de monétisation, de formation payante, d’intégration dans un produit, un service, une offre ou une activité génératrice de revenus ;
+
+4.2. utiliser le Logiciel dans le cadre d’une activité salariée, indépendante, associative, administrative, universitaire, de recherche contractuelle ou de toute activité exercée pour le compte d’un tiers ;
+
+4.3. reproduire, distribuer, publier, communiquer, mettre à disposition du public, héberger, vendre, louer, prêter, sous-licencier ou transférer le Logiciel, en tout ou partie ;
+
+4.4. créer, publier, diffuser ou rendre accessible toute œuvre dérivée, adaptation, modification ou version modifiée du Logiciel, sauf pour un Usage personnel strictement privé et non diffusé ;
+
+4.5. supprimer, altérer ou masquer les mentions de droits d’auteur, avis juridiques, en-têtes de licence, avertissements ou identifiants de provenance ;
+
+4.6. utiliser le Logiciel, en tout ou partie, pour alimenter, entraîner, affiner, tester, évaluer, calibrer, améliorer ou exploiter un Système d’IA ;
+
+4.7. copier, aspirer, extraire, parser, indexer, vectoriser, tokeniser, analyser ou ingérer le Logiciel dans un corpus, une base de données, un dataset, un modèle ou tout système automatisé, y compris à des fins de fouille de textes et de données, sans accord écrit préalable du Titulaire des droits ;
+
+4.8. contourner, neutraliser ou tenter de contourner les mesures techniques, marquages, métadonnées, notices ou signaux exprimant l’opposition du Titulaire des droits à la fouille de textes et de données ou à tout usage automatisé ;
+
+4.9. utiliser le nom, la marque, l’identité visuelle ou la réputation du Titulaire des droits pour promouvoir un produit, un service ou une activité sans autorisation écrite.
+
+5. Reconnaissance de l’absence d’autorisation commerciale ou professionnelle
+
+Toute utilisation qui excède l’Usage personnel est subordonnée à une autorisation écrite préalable du Titulaire des droits.
+
+À défaut d’une telle autorisation, aucune utilisation commerciale, professionnelle, collective, institutionnelle ou automatisée n’est concédée au titre de la présente licence.
+
+6. Réserve de droits
+
+Le Logiciel est protégé par le droit d’auteur et, le cas échéant, par tout autre droit de propriété intellectuelle applicable.
+
+Aucun droit n’est transféré à l’Utilisateur, hormis ceux expressément prévus par la présente licence.
+
+7. Opposition à l’usage automatisé et à la fouille de textes et de données
+
+Le Titulaire des droits s’oppose expressément, dans la mesure permise par la loi applicable, à toute fouille de textes et de données, extraction automatisée, constitution de corpus, entraînement de modèle, analyse automatisée ou ingestion du Logiciel à des fins d’intelligence artificielle ou de traitement automatisé.
+
+Cette opposition s’applique notamment lorsque le Logiciel est mis à disposition en ligne, y compris dans un dépôt public.
+
+L’Utilisateur reconnaît que toute utilisation du Logiciel au moyen d’un Système d’IA ou d’un procédé automatisé requiert l’accord écrit préalable du Titulaire des droits.
+
+8. Propriété intellectuelle et marques
+
+La présente licence ne confère aucune licence sur les marques, noms commerciaux, logos, brevets, secrets d’affaires ou autres droits distincts du droit d’auteur appartenant au Titulaire des droits, sauf mention écrite contraire.
+
+9. Absence de garantie
+
+Le Logiciel est fourni “en l’état”, sans garantie d’aucune sorte, expresse ou implicite, notamment sans garantie de qualité, d’adéquation à un usage particulier, d’absence d’erreur, d’absence de contrefaçon ou de continuité de service.
+
+10. Limitation de responsabilité
+
+Dans la mesure permise par la loi applicable, le Titulaire des droits ne pourra être tenu responsable d’aucun dommage direct, indirect, incident, spécial, consécutif ou immatériel résultant de l’utilisation ou de l’impossibilité d’utiliser le Logiciel.
+
+11. Résiliation
+
+Toute violation de la présente licence entraîne la résiliation automatique et immédiate des droits concédés.
+
+En cas de résiliation, l’Utilisateur doit cesser sans délai toute utilisation du Logiciel et détruire toutes les copies en sa possession, sous réserve des archives ou copies que la loi impose de conserver.
+
+12. Droit applicable et juridiction compétente
+
+La présente licence est régie par le droit français.
+
+Tout litige relatif à son interprétation, son exécution ou sa validité relève des tribunaux compétents du ressort du siège ou du domicile du Titulaire des droits, sous réserve des règles impératives applicables.
+
+13. Divisibilité
+
+Si une stipulation de la présente licence est déclarée nulle, inapplicable ou sans effet, les autres stipulations demeurent en vigueur.
+
+14. Intégralité
+
+La présente licence constitue l’intégralité de l’accord entre le Titulaire des droits et l’Utilisateur quant au Logiciel, sauf autorisation écrite contraire du Titulaire des droits.
+
+15. Acceptation
+
+Le téléchargement, la copie, la modification, la compilation, l’exécution ou toute autre utilisation du Logiciel emporte acceptation pleine et entière de la présente licence.
