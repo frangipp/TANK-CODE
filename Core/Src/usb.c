@@ -17,11 +17,21 @@ uint32_t usb_data_available() {
 }
 
 void usb_get(uint8_t* data, uint32_t len) {
-    if (len > usb_data_length) {
+    if (len > usb_data_length)
         len = usb_data_length;
-    }
+
     memcpy(data, usb_buff, len);
     usb_rx_sth = false;
+}
+
+void usb_get_str(char* str, uint32_t max_len) {
+    uint32_t len = usb_data_available();
+    if (len >= max_len)
+        len = max_len - 1;
+    
+    memcpy(str, usb_buff, len);
+    usb_rx_sth = false;
+    str[len] = '\0';
 }
 
 void usb_send(uint8_t *data, uint32_t len) {
@@ -34,6 +44,12 @@ void USB_MemBuff(uint8_t* buff, uint32_t len) {
     }
     memcpy(usb_buff, buff, len);
     usb_data_length = len;
-    usb_buff[len] = '\0';
     usb_rx_sth = true;
+}
+
+/** Redirection de printf vers USB */
+int _write(int file, char *ptr, int len)
+{
+    CDC_Transmit_FS((uint8_t*)ptr, len);
+    return len;
 }
