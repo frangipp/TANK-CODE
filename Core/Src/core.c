@@ -1,27 +1,28 @@
 #include "core.h"
-#include "motor.h"
-#include "stm32g4xx_hal.h"
-#include "usbd_cdc_if.h"
-#include <stdint.h>
-#include <string.h>
-
-#include "usb.h"
-#include "stusb4531.h"
+#include "motor.h"          
+#include "stm32g4xx_hal.h"  
+#include "usb.h"            
+#include "HC-05.h"          
 
 void setup() {
-    motorInit();
+    motorInit();   // Initialisation des moteurs
+    HC05_init();   // Initialisation du HC-05 et lancement des IT UART
 }
 
 void loop() {
-    // HAL_Delay(200);
+    HC05_process(); // Relaye les données entre l'USB et le HC-05 en continu
+}
 
-    /** Test d'envoi/réception */
-    uint32_t usb_data_length = usb_data_available();
-    if (usb_data_length) {
-        char data[100]; // Adjust the size as needed
-        usb_get_str(data, sizeof(data));
-        // usb_send(data, usb_data_length);
-        printf("Reçu via USB: %s\n", data);
+/**
+ * @brief Callback HAL appelé à chaque octet reçu sur n'importe quel UART
+ *        Délègue le traitement à HC05 si c'est l'UART1
+ */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART1)
+    {
+        HC05_UART_RxCpltCallback();
     }
 }
+
 
