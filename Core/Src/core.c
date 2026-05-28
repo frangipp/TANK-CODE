@@ -12,10 +12,13 @@
 #include "stusb4531_regs.h"
 #include "usb.h"
 
+#include "HC-05.h"
+
 static stusb4531_handle_t g_pd;
 
 void setup() {
     motorInit();
+    HC05_init(); // Initialisation du HC-05 et lancement des IT UART
 
     HAL_GPIO_WritePin(PIN_HC05_EN_GPIO_Port, PIN_HC05_EN_Pin, GPIO_PIN_SET);
 
@@ -29,6 +32,7 @@ void setup() {
 }
 
 void loop() {
+    HC05_process(); // Relaye les données entre l'USB et le HC-05 en continu
 
     /** Test d'envoi/réception */
     uint32_t usb_data_length = usb_data_available();
@@ -168,4 +172,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if (GPIO_Pin == PIN_ALERT_Pin)
         stusb4531_irq_handler(&g_pd);
     printf("EXTI interrupt on pin %d\n", GPIO_Pin);
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+        HC05_UART_RxCpltCallback();
+    }
 }
