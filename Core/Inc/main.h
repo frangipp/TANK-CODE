@@ -55,7 +55,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+extern I2C_HandleTypeDef hi2c1;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -101,8 +101,9 @@ void Error_Handler(void);
 #define PIN_DIR_RIGHTB3_GPIO_Port GPIOB
 #define PIN_LED0_Pin GPIO_PIN_4
 #define PIN_LED0_GPIO_Port GPIOB
-#define PIN_I2C_ALERT_Pin GPIO_PIN_5
-#define PIN_I2C_ALERT_GPIO_Port GPIOB
+#define PIN_ALERT_Pin GPIO_PIN_5
+#define PIN_ALERT_GPIO_Port GPIOB
+#define PIN_ALERT_EXTI_IRQn EXTI9_5_IRQn
 #define PIN_LED1_Pin GPIO_PIN_6
 #define PIN_LED1_GPIO_Port GPIOB
 #define PIN_I2C_SDA_Pin GPIO_PIN_7
