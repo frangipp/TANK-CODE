@@ -1,18 +1,21 @@
 #ifndef HC_05_H
 #define HC_05_H
 
-#include "main.h"           
-#include "stm32g4xx_hal.h"  
-#include <stdint.h>         
+#include "main.h"
+#include "stm32g4xx_hal.h"
+#include <stdint.h>
 
-#define BUFFER_SIZE 128     // Taille max d'une ligne reçue/envoyée
+#define BUFFER_SIZE 128 // Taille max d'une ligne reçue/envoyée
 
-extern UART_HandleTypeDef huart1;  // UART1 connecté au HC-05
+extern UART_HandleTypeDef huart1; // UART1 connecté au HC-05
 
 // Initialisation et boucle principale
 void HC05_init(void);
 void HC05_process(void);
 void HC05_UART_RxCpltCallback(void);
+
+uint32_t HC05_data_available(void);
+void HC05_get_line(char *buffer, uint16_t max_len); // Récupère la ligne reçue depuis le HC-05
 
 // Mode AT (configuration du module)
 void HC05_enter_AT_mode(void);

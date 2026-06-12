@@ -67,8 +67,8 @@ extern I2C_HandleTypeDef hi2c1;
 #define PIN_ENC_LA_GPIO_Port GPIOA
 #define PIN_ENC_LB_Pin GPIO_PIN_1
 #define PIN_ENC_LB_GPIO_Port GPIOA
-#define PIN_PWM_RIGHT_Pin GPIO_PIN_2
-#define PIN_PWM_RIGHT_GPIO_Port GPIOA
+#define PIN_PWM_LEFT_Pin GPIO_PIN_2
+#define PIN_PWM_LEFT_GPIO_Port GPIOA
 #define PIN_DIR_LEFT_Pin GPIO_PIN_3
 #define PIN_DIR_LEFT_GPIO_Port GPIOA
 #define PIN_ENC_RA_Pin GPIO_PIN_4
@@ -97,8 +97,8 @@ extern I2C_HandleTypeDef hi2c1;
 #define PIN_SWCLK_GPIO_Port GPIOA
 #define PIN_I2C_SCL_Pin GPIO_PIN_15
 #define PIN_I2C_SCL_GPIO_Port GPIOA
-#define PIN_DIR_RIGHTB3_Pin GPIO_PIN_3
-#define PIN_DIR_RIGHTB3_GPIO_Port GPIOB
+#define PIN_DET_RIGHT_Pin GPIO_PIN_3
+#define PIN_DET_RIGHT_GPIO_Port GPIOB
 #define PIN_LED0_Pin GPIO_PIN_4
 #define PIN_LED0_GPIO_Port GPIOB
 #define PIN_ALERT_Pin GPIO_PIN_5
@@ -108,8 +108,8 @@ extern I2C_HandleTypeDef hi2c1;
 #define PIN_LED1_GPIO_Port GPIOB
 #define PIN_I2C_SDA_Pin GPIO_PIN_7
 #define PIN_I2C_SDA_GPIO_Port GPIOB
-#define PIN_PWM_RIGHTB8_Pin GPIO_PIN_8
-#define PIN_PWM_RIGHTB8_GPIO_Port GPIOB
+#define PIN_PWM_RIGHT_Pin GPIO_PIN_8
+#define PIN_PWM_RIGHT_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

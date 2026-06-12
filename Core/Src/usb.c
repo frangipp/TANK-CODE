@@ -8,6 +8,7 @@
 uint8_t usb_buff[USB_BUFF_SIZE];
 uint32_t usb_data_length = 0;
 bool usb_rx_sth          = false;
+extern UART_HandleTypeDef huart1;
 
 /** Fonction privée copiant les données dès leur réception usb */
 void USB_MemBuff(uint8_t *buff, uint32_t len);
@@ -45,6 +46,7 @@ void USB_MemBuff(uint8_t *buff, uint32_t len) {
 
 /** Redirection de printf vers USB */
 int _write(int file, char *ptr, int len) {
-    CDC_Transmit_FS((uint8_t *)ptr, len);
+    // CDC_Transmit_FS((uint8_t *)ptr, len);
+    HAL_UART_Transmit(&huart1, (uint8_t *)ptr, len, HAL_MAX_DELAY);
     return len;
 }
